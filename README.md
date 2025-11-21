@@ -40,3 +40,14 @@ Key parameters include the underlying spot, strike, maturity, risk-free rate, up
 ## Monte Carlo pricer with custom payoff
 
 `monte_carlo_option_pricing.py` simulates geometric Brownian motion paths. You can supply any Python callable as the payoff to model custom contracts (for example, Asian payoffs or digital options). The example in `__main__` shows how to pass a lambda for a vanilla call payoff and how to set a random seed for reproducible runs.
+# Binomial Option Pricing
+
+This repository implements a simple Cox-Ross-Rubinstein binomial tree pricer for call and put options. Use `binomial_option_pricing.py` to calculate European or American prices along with delta estimates.
+
+## Quick start
+
+Run the module directly to see an example price calculation:
+
+```bash
+python binomial_option_pricing.py
+```
