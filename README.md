@@ -7,8 +7,9 @@ This repository includes:
 
 ## Quick start
 
-Run the module directly to see example binomial and Monte Carlo price calculations:
+Run the modules directly to see example binomial and Monte Carlo price calculations:
 
 ```bash
 python binomial_option_pricing.py
+python monte_carlo_option_pricing.py
 ```
