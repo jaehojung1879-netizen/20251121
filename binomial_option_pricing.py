@@ -110,6 +110,8 @@ def binomial_option_price(
 if __name__ == "__main__":
     # Binomial example
     binomial_result = binomial_option_price(
+    # Example usage
+    result = binomial_option_price(
         spot=100,
         strike=100,
         maturity=1.0,
@@ -121,3 +123,4 @@ if __name__ == "__main__":
         american=False,
     )
     print(f"Binomial price: {binomial_result.price:.4f}, Delta: {binomial_result.delta:.4f}")
+    print(f"Option price: {result.price:.4f}, Delta: {result.delta:.4f}")
